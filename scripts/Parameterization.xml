@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Data Parameterization">
+    <test name="Give data from this testcase">
+        <parameter name="Name" value="Duck"/>
+        <parameter name="age" value="12"/>
+        <classes>
+            <class name="org.saravana.learntestng.DataParameterization">
+                <methods>
+                    <include name="printNameAndAge"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
