@@ -14,7 +14,7 @@ public class DriveCar {
         System.out.println("Put first gear");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,enabled = true)
     public void putSecondGear(){
         System.out.println("Put second gear");
     }

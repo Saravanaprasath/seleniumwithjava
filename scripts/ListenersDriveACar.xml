@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example of listeners">
+    <listeners>
+        <listener class-name="org.saravana.learntestng.ListenersExample"/>
+    </listeners>
+    <test name="Testing - Driving a car">
+        <classes>
+            <class name="org.saravana.learntestng.DriveCar">
+                <methods>
+                    <include name="startTheCar"/>
+                    <include name="putFirstGear"/>
+                    <include name="putSecondGear"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
