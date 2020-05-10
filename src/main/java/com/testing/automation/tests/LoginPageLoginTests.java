@@ -5,10 +5,10 @@ import com.testing.automation.testbase.TestBase;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class LoginPageTests extends TestBase {
+public class LoginPageLoginTests extends TestBase {
     LoginPage loginPage;
 
-    public LoginPageTests() {
+    public LoginPageLoginTests() {
         super();
         loginPage = PageFactory.initElements(driver, LoginPage.class);
     }

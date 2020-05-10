@@ -3,7 +3,7 @@
 <suite name="Login into Bidify">
     <test name="Login">
         <classes>
-            <class name="com.testing.automation.tests.LoginPageTests">
+            <class name="com.testing.automation.tests.LoginPageLoginTests">
                 <methods>
                     <include name="login"/>
                 </methods>
