@@ -3,7 +3,7 @@
 <suite name="Get titles of youtube">
     <test name="Go to youtube">
         <classes>
-            <class name="auto.inside.automation.youtube.tests.HomePageTests">
+            <class name="auto.inside.automation.applications.youtube.tests.HomePageTests">
                 <methods>
                     <include name="searchInGoogle"/>
                 </methods>
@@ -12,7 +12,7 @@
     </test>
     <test name="Print all results">
         <classes>
-            <class name="auto.inside.automation.youtube.tests.HomePageTests">
+            <class name="auto.inside.automation.applications.youtube.tests.HomePageTests">
                 <methods>
                     <include name="printTitles"/>
                 </methods>

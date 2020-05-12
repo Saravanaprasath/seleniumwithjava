@@ -1,4 +1,4 @@
-package auto.inside.automation.youtube.pages;
+package auto.inside.automation.applications.youtube.pages;
 
 import auto.inside.automation.testbase.Base;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class HomePage extends Base {
     WebDriver driver;
-
+    public String googleUrl = "https://www.google.com/";
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -36,6 +36,7 @@ public class HomePage extends Base {
 
     //Methods
     public void search() {
+        driver.get(googleUrl);
         searchBox.sendKeys("youtube");
         searchBox.submit();
     }
@@ -88,13 +89,11 @@ public class HomePage extends Base {
         HashMap<String, String> videoTitleAndChannelName = new HashMap<>();
         ArrayList<String> videoTitle = getAllYTVideoTitles();
         ArrayList<String> channelName = getAllYTChannelNames();
-
-
         for (int j = 0; j < channelName.size(); j++) {
             videoTitleAndChannelName.put(videoTitle.get(j), channelName.get(j));
         }
-
         System.out.println(videoTitleAndChannelName);
+        System.out.println("Completed");
         //System.out.println(Arrays.asList(videoTitleAndChannelName));
     }
 

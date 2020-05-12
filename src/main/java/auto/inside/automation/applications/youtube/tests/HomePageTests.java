@@ -1,12 +1,9 @@
-package auto.inside.automation.youtube.tests;
+package auto.inside.automation.applications.youtube.tests;
 
 import auto.inside.automation.testbase.Base;
-import auto.inside.automation.youtube.pages.HomePage;
-import com.testing.automation.testbase.TestBase;
+import auto.inside.automation.applications.youtube.pages.HomePage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
-import java.awt.*;
 
 public class HomePageTests extends Base {
     HomePage homePage;

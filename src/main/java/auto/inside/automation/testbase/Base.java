@@ -3,6 +3,7 @@ package auto.inside.automation.testbase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 
 public class Base {
     public static WebDriver driver = null;
@@ -26,6 +27,10 @@ public class Base {
             driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
-        driver.get(url);
+    }
+
+    //@AfterSuite
+    public void closeBrowser() {
+        driver.close();
     }
 }
