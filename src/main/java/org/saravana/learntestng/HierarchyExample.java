@@ -10,7 +10,7 @@ public class HierarchyExample {
     }
 
     @Test(alwaysRun = true)
-    public void testing(){
+    public void testing() {
         System.out.println("I'm testing");
     }
 
