@@ -15,4 +15,18 @@
             </class>
         </classes>
     </test>
+    <test name="Print in to excel sheet">
+        <classes>
+            <class name="auto.inside.automation.datadriven.DataDriven">
+                <methods>
+                    <include name="createWorkBook"/>
+                </methods>
+            </class>
+            <class name="auto.inside.automation.applications.coviddashboard.covidtests.CovidTests">
+                <methods>
+                    <include name="writeData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

@@ -29,4 +29,9 @@ public class CovidTests extends Base {
     public void getCounts() throws InterruptedException {
         covid.getCount();
     }
+
+    @Test
+    public void writeData(){
+        covid.writeData();
+    }
 }
