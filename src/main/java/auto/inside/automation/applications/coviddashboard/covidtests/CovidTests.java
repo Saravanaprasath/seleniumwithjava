@@ -30,8 +30,8 @@ public class CovidTests extends Base {
         covid.getCount();
     }
 
-    @Test
+   /* @Test
     public void writeData(){
         covid.writeData();
-    }
+    }*/
 }
