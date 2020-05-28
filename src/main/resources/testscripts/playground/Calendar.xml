@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Go to playground site">
+    <test name="Go to playground">
+        <parameter name="nthday" value="15"/>
+        <classes>
+            <class name="dexlock.inside.playground.tests.Tests">
+                <methods>
+                    <include name="calendar"/>
+                    <include name="clickOnCalendar"/>
+                    <include name="clickOnNthDay"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

@@ -1,4 +1,6 @@
 package com.testing.javaprogramming.excel;
+import auto.inside.automation.applications.coviddashboard.covid.CovidPage;
+
 
 import org.testng.annotations.Test;
 
@@ -8,12 +10,14 @@ import static com.testing.javaprogramming.excel.ReadDataFromExcel.*;
 
 public class AccessExcel {
     ReadDataFromExcel readDataFromExcel;
-    String filePath = "data/readdata.xlsx";
-    String sheetName = "Company";
+    WriteDataInExcel writeDataInExcel;
+    CovidPage covidPage;
+    String fileName = "data/saravana.xlsx";
+    String sheetName = "Sheet1";
 
     @Test
     public void readDataFromExcel() throws IOException {
-        readDataFromExcel = new ReadDataFromExcel(filePath, sheetName);
+        readDataFromExcel = new ReadDataFromExcel(fileName, sheetName);
         int rowCount = getRowCount();
         int columnCount = getColumnCount();
         for (int i = 0; i < rowCount; i++) {
@@ -21,6 +25,12 @@ public class AccessExcel {
                 getCellData(i, j);
             }
         }
+    }
+
+    @Test
+    public void writeDataInExcel() throws Exception {
+        writeDataInExcel = new WriteDataInExcel("data/testing.xlsx","hello");
+        writeDataInExcel.writeIntoSheet(covidPage.putDataIntoMap());
     }
 
 

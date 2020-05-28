@@ -18,7 +18,6 @@ public class ReadDataFromExcel {
     public ReadDataFromExcel(String filePath, String sheetName) throws IOException {
         workbook = new XSSFWorkbook(filePath);
         sheet = workbook.getSheet(sheetName);
-
     }
 
     public static int getRowCount() {
